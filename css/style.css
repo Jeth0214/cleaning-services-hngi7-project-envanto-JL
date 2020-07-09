@@ -1,0 +1,118 @@
+/* Imported 'Work Sans' font from https://fonts.google.com/ */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+
+/* our app css variables */
+:root {
+  --primary-color: rgba(60, 14, 246, 0.9);
+  --secondary-color: rgba(0, 0, 0, 0.9);
+}
+
+/*Global Styles */
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+/* Buttons */
+.btn-outline {
+  color: var(--primary-color);
+  font-weight: 700;
+  border: 1px solid var(--primary-color);
+}
+
+.btn-outline:hover {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+.btn-fill {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.btn-fill:hover {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+/* Navbar */
+#mainNav {
+  background-color: transparent;
+}
+
+.current {
+  color: var(--primary-color) !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #000000;
+}
+
+#mainNav .navbar-brand {
+  transition: font-size 0.3s ease-in-out;
+  color: #3c0ef6;
+}
+
+#navbarNav a {
+  color: #000000;
+  transition: color 0.3s ease-in-out;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+#navbarNav a:hover {
+  color: var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.nav-item {
+  margin: 1rem 0.9rem;
+}
+
+.navbar .nav-item > .nav-link.active {
+  color: var(--primary-color) !important;
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.navbar-dark .navbar-brand {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+}
+
+#mainNav.navbar-shrink {
+  background-color: rgba(60, 14, 246, 0.6);
+  max-width: 1440px;
+  margin: 0 auto;
+}
+#mainNav.navbar-shrink .navbar-brand {
+  font-size: 1.4em;
+}
+#mainNav.navbar-shrink .navbar-brand svg,
+#mainNav.navbar-shrink .navbar-brand img {
+  height: 1.4rem;
+}
+
+/* Home Section */
+
+.home-section {
+  background-image: url("../images/landing-page-img.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  padding-top: 70px;
+  height: 100vh;
+  width: 100%;
+}
+
+.home-section h1 {
+  font-weight: 600;
+}
+
+.home-away {
+  color: var(--primary-color);
+}
