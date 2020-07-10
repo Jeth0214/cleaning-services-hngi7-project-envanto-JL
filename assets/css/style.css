@@ -1,17 +1,18 @@
 /* Imported 'Work Sans' font from https://fonts.google.com/ */
 @import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
 
+/* import font family */
+@font-face {
+  font-family: cotham;
+  src: url("../assets/Cotham-master/CothamSans.ufo");
+}
+
 /* our app css variables */
 :root {
   --primary-color: #5acd32;
   --secondary-color: #2d1e2f;
   --bg-color: #514663;
-}
-
-/* Font Face */
-@font-face {
-  font-family: cotham;
-  src: url("../assets/Cotham-master/CothamSans.otf");
+  --bg-nav-color: #f9f9f9;
 }
 
 /*Global Styles */
@@ -20,7 +21,7 @@
 }
 
 body {
-  font-family: cotham;
+  font-family: "Muli", sans-serif;
   color: var(--secondary-color);
   overflow-x: hidden;
 }
@@ -67,14 +68,15 @@ body {
 
 /* Navbar */
 #mainNav {
-  background-color: #f9f9f9;
+  background-color: var(--bg-nav-color);
+}
+
+.current {
+  color: var(--primary-color) !important;
 }
 
 .fa-bars {
   color: var(--primary-color);
-}
-.current {
-  color: var(--primary-color) !important;
 }
 
 .navbar-toggler-icon {
@@ -116,7 +118,7 @@ body {
 }
 
 #mainNav.navbar-shrink {
-  background-color: #f9f9f9;
+  background-color: var(--bg-nav-color);
   border-bottom: 3px solid var(--primary-color);
   max-width: 1440px;
   margin: 0 auto;
@@ -127,7 +129,6 @@ body {
 }
 #mainNav.navbar-shrink .navbar-link {
   font-size: 1.3em;
-  color: white !important;
 }
 
 #mainNav.navbar-shrink .navbar-brand svg,
@@ -196,7 +197,6 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #ffffff;
   height: 70px;
   border-top: 0.5px solid var(--secondary-color);
 }

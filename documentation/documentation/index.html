@@ -60,6 +60,7 @@
       }
       .btn-primary {
         background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
+        background-image: -ms-linear-gradient(top, #0088cc, #0044cc);
         background-image: -webkit-gradient(
           linear,
           0 0,
@@ -154,20 +155,20 @@
     </div>
     <div id="documenter_content">
       <section id="documenter_cover">
-        <h1>Evanto Project</h1>
-        <h2>Cleaning Services Responsive Template</h2>
+        <h1>Sample Project</h1>
+        <h2>Responsive HTML5 Template and Bootstrap</h2>
         <div id="documenter_buttons"></div>
         <hr />
         <ul>
-          <li>created: 03/09/2020</li>
-          <li>latest update: 03/10/2020</li>
-          <li>by: Roland Jethro Suyom</li>
+          <li>created: 03/07/2020</li>
+          <li>latest update: 03/07/2020</li>
+          <li>by: teamsyntax</li>
 
           <li>
             email:
             <a
-              href="mailto:&#114;&#111;&#108;&#97;&#110;&#100;&#106;&#101;&#116;&#104;&#114;&#111;&#115;&#117;&#121;&#111;&#109;&#64;&#121;&#97;&#104;&#111;&#111;&#183;&#99;&#111;&#109;"
-              >&#114;&#111;&#108;&#97;&#110;&#100;&#106;&#101;&#116;&#104;&#114;&#111;&#115;&#117;&#121;&#111;&#109;&#64;&#121;&#97;&#104;&#111;&#111;&#183;&#99;&#111;&#109;</a
+              href="mailto:&#104;&#101;&#108;&#108;&#111;&#64;&#104;&#110;&#103;&#46;&#116;&#101;&#99;&#104;"
+              >&#104;&#101;&#108;&#108;&#111;&#64;&#104;&#110;&#103;&#46;&#116;&#101;&#99;&#104;</a
             >
           </li>
         </ul>
@@ -180,9 +181,9 @@
           <hr class="notop" />
         </div>
         <pre class="prettyprint lang-html linenums">
--assets/                          (Main css, boostrap css, Cotham folder for font-family)                
-- images/                        (All Images)
-- js/                     (Bootstrap JS, JQUERY, Font Awesome js, popper js, main JS)</pre
+- assets/css                    (Template CSS)
+- assets/images                    (All Images)
+- assets/js                     (Template JS)</pre
         >
         <p>
           &nbsp;
@@ -249,8 +250,8 @@
           &nbsp;
         </div>
         <pre class="prettyprint lang-html linenums">
-assets/
-  css/
+- assets/
+  - css/
     - style.css                - (Main CSS file) 
 </pre
         >
@@ -280,14 +281,7 @@ assets/
         <div>
           <pre class="prettyprint lang-html linenums">
 &lt;!-- Main JS --&gt;
-&lt;script src=&quot;./js/app.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;        
-&lt;!--  Bootstrap JS Links --&gt;
-&lt;script src=&quot;./js/bootstrap.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;        
-&lt;script src=&quot;./js/popper.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;        
-&lt;script src=&quot;./js/jquery-3.5.1.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;        
-&lt;!-- Animations Links --&gt;
-&lt;script src=&quot;https://unpkg.com/aos@2.3.1/dist/aos.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;        
-        
+&lt;script src=&quot;./assets/js/custom.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;        
 </pre
           >
         </div>
@@ -300,17 +294,14 @@ assets/
         </div>
         <div>
           To change the embedded font, please take a look in the head part of
-          assets/css /style.css:
+          assets/css/theme.css:
         </div>
         <div>
           &nbsp;
         </div>
         <div>
           <pre class="prettyprint lang-html linenums">
-assets/               @font-face {                                           body {
-Cotham-master/          font-family: cotham, sans;                              font-family: cotham;
-  - CothamSans.otf      src: url("../assets/Cotham-master/CothamSans.otf");    }
-                        }
+&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap&quot; rel=&quot;stylesheet&quot;&gt;
             </pre
           >
         </div>
@@ -332,9 +323,14 @@ Cotham-master/          font-family: cotham, sans;                              
           <div>
             <pre class="prettyprint lang-css linenums">
 :root {
-  --primary-color: #5acd32;
-  --secondary-color: #2d1e2f;
-  --bg-color: #514663;
+  --header-font: 'Roboto', serif;
+  --text-font: 'Poppins', sans-serif;
+  --nav-font: 'Varela Round', sans-serif;
+  --primary-color: #4070ff;
+  --secondary-color: #5983ff;
+  --grey-color: #e0e0e0;
+  --dark-color: #333;
+  --white-color: #fff;
 }</pre
             >
           </div>
@@ -354,7 +350,7 @@ Cotham-master/          font-family: cotham, sans;                              
         </div>
 
         <pre class="prettyprint lang-html linenums">
-&lt;i class=&quot;fa fa-bars&quot;&lt;/i&gt;
+&lt;i class=&quot;fa fa-home&quot;&lt;/i&gt;
           </pre
         >
 
@@ -378,7 +374,7 @@ Cotham-master/          font-family: cotham, sans;                              
           image logo
         </p>
         <pre class="prettyprint lang-html linenums">
-&lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt; &lt;img src=&quot;./images/archer-logo<span style="font-family: Arial, Verdana, sans-serif;"> </span><span style="font-family: Arial, Verdana, sans-serif;">&quot; alt=&quot;logo&quot; /&gt; <span style="font-family: Arial, Verdana, sans-serif;"> </span>archer &lt;/a&gt;</span>
+&lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt; &lt;img src=&quot;./assets/images/...path to your logo<span style="font-family: Arial, Verdana, sans-serif;">... path to your image logo ...</span><span style="font-family: Arial, Verdana, sans-serif;">&quot; alt=&quot;logo&quot; /&gt; &lt;/a&gt;</span>
 </pre>
       </section>
       <section id="sliders">
