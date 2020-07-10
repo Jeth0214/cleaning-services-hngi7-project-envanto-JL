@@ -6,6 +6,7 @@
   --primary-color: #5acd32;
   --secondary-color: #2d1e2f;
   --bg-color: #514663;
+  --bg-nav-color: #f9f9f9;
 }
 
 /*Global Styles */
@@ -61,11 +62,15 @@ body {
 
 /* Navbar */
 #mainNav {
-  background-color: #514663;
+  background-color: var(--bg-nav-color);
 }
 
 .current {
   color: var(--primary-color) !important;
+}
+
+.fa-bars {
+  color: var(--primary-color);
 }
 
 .navbar-toggler-icon {
@@ -107,20 +112,17 @@ body {
 }
 
 #mainNav.navbar-shrink {
-  background-color: var(--bg-color);
+  background-color: var(--bg-nav-color);
   border-bottom: 3px solid var(--primary-color);
   max-width: 1440px;
   margin: 0 auto;
   z-index: 2;
-  color: white !important;
 }
 #mainNav.navbar-shrink .navbar-brand {
   font-size: 1.3em;
-  color: white !important;
 }
 #mainNav.navbar-shrink .navbar-link {
   font-size: 1.3em;
-  color: white !important;
 }
 
 #mainNav.navbar-shrink .navbar-brand svg,
@@ -134,12 +136,6 @@ body {
   }
   .btn-navbar {
     margin-left: 0.08rem;
-  }
-}
-@media screen and (max-width: 768px) {
-  .nav-item a,
-  .navbar-brand {
-    color: #ffffff !important;
   }
 }
 
