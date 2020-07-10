@@ -42,8 +42,21 @@ body {
   background-color: rgba(90, 205, 50, 0.6);
 }
 
+/* Cards */
 .card img {
   max-height: 600px;
+}
+
+/* titles */
+.card-title,
+.title {
+  font-weight: 600;
+}
+
+.staff {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 4rem 0 2rem;
 }
 
 /* Navbar */
@@ -131,8 +144,10 @@ body {
 /* Home Section */
 
 #our-team-section {
-  margin: 5rem auto;
-  padding: 1.2rem;
+  display: flex;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
   z-index: 1;
 }
 
@@ -169,6 +184,7 @@ footer {
   height: 70px;
   border-top: 0.5px solid var(--secondary-color);
 }
+
 .footer-logo {
   display: flex;
   align-items: center;
@@ -176,7 +192,7 @@ footer {
 }
 
 .footer-logo img {
-  width: 100px;
+  width: 80px;
 }
 .footer-text {
   font-size: 0.8em;
@@ -186,3 +202,38 @@ footer {
   color: var(--secondary-color);
   text-decoration: none;
 }
+
+/* Back to top button*/
+
+.back-to-top {
+  position: fixed;
+  color: var(--primary-color);
+  bottom: 25px;
+  right: 25px;
+  font-size: 3.5rem;
+  z-index: 100;
+}
+
+.back-to-top .backIcon {
+  background-color: white;
+  border: 2x solid var(--primary-color);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.back-to-top .backIcon:hover {
+  color: white;
+  background-color: var(--primary);
+}
+
+.back-to-top:hover .backIcon {
+  color: white;
+  background-color: var(--primary-color);
+}
+
+.back-to-top .backIcon:active {
+  color: white;
+  background-color: var(--primary-color);
+}
+
+/* Back to top button*/
