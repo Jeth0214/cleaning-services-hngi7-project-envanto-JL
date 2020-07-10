@@ -1,6 +1,12 @@
 /* Imported 'Work Sans' font from https://fonts.google.com/ */
 @import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
 
+/* import font family */
+@font-face {
+  font-family: cotham;
+  src: url("../assets/Cotham-master/CothamSans.ufo");
+}
+
 /* our app css variables */
 :root {
   --primary-color: #5acd32;
@@ -191,7 +197,6 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #e5e5e5;
   height: 70px;
   border-top: 0.5px solid var(--secondary-color);
 }
