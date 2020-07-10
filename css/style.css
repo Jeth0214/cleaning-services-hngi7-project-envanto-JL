@@ -1,10 +1,11 @@
 /* Imported 'Work Sans' font from https://fonts.google.com/ */
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
 
 /* our app css variables */
 :root {
-  --primary-color: rgba(60, 14, 246, 0.9);
-  --secondary-color: rgba(0, 0, 0, 0.9);
+  --primary-color: #5acd32;
+  --secondary-color: #2d1e2f;
+  --bg-color: #514663;
 }
 
 /*Global Styles */
@@ -13,10 +14,13 @@
 }
 
 body {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Muli", sans-serif;
+  color: var(--secondary-color);
+  overflow-x: hidden;
 }
 
 /* Buttons */
+
 .btn-outline {
   color: var(--primary-color);
   font-weight: 700;
@@ -31,34 +35,41 @@ body {
 .btn-fill {
   background-color: var(--primary-color);
   color: #ffffff;
-  font-weight: 700;
 }
 
 .btn-fill:hover {
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
+  color: #ffffff;
+  background-color: rgba(90, 205, 50, 0.6);
+}
+
+.card img {
+  max-height: 600px;
 }
 
 /* Navbar */
 #mainNav {
-  background-color: transparent;
+  background-color: #514663;
 }
 
 .current {
   color: var(--primary-color) !important;
 }
 
+.navbar-toggler-icon {
+  color: var(--primary-color) !important;
+}
 .navbar-dark .navbar-nav .nav-link {
-  color: #000000;
+  color: var(--secondary-color);
 }
 
 #mainNav .navbar-brand {
   transition: font-size 0.3s ease-in-out;
-  color: #3c0ef6;
+  color: var(--secondary-color);
+  font-size: 1.2rem;
 }
 
 #navbarNav a {
-  color: #000000;
+  color: var(--secondary-color);
   transition: color 0.3s ease-in-out;
   font-size: 1rem;
   font-weight: 800;
@@ -70,49 +81,108 @@ body {
 }
 
 .nav-item {
-  margin: 1rem 0.9rem;
+  margin: 1rem 1.5rem;
 }
 
 .navbar .nav-item > .nav-link.active {
   color: var(--primary-color) !important;
-  border-bottom: 1px solid var(--primary-color);
 }
 
 .navbar-dark .navbar-brand {
   font-size: 2rem;
   font-weight: 700;
-  color: white;
 }
 
 #mainNav.navbar-shrink {
-  background-color: rgba(60, 14, 246, 0.6);
+  background-color: var(--bg-color);
+  border-bottom: 3px solid var(--primary-color);
   max-width: 1440px;
   margin: 0 auto;
+  z-index: 2;
+  color: white !important;
 }
 #mainNav.navbar-shrink .navbar-brand {
-  font-size: 1.4em;
+  font-size: 1.3em;
+  color: white !important;
 }
+#mainNav.navbar-shrink .navbar-link {
+  font-size: 1.3em;
+  color: white !important;
+}
+
 #mainNav.navbar-shrink .navbar-brand svg,
 #mainNav.navbar-shrink .navbar-brand img {
-  height: 1.4rem;
+  height: 1.2rem;
+}
+
+@media screen and (min-width: 992px) {
+  #mainNav {
+    background-color: transparent;
+    transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+  }
+  .nav-item {
+    margin: 1rem 0.9rem;
+  }
+  .btn-navbar {
+    margin-left: 1rem;
+  }
 }
 
 /* Home Section */
 
-.home-section {
-  background-image: url("../images/landing-page-img.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
-  padding-top: 70px;
-  height: 100vh;
-  width: 100%;
+#our-team-section {
+  margin: 5rem auto;
+  padding: 1.2rem;
+  z-index: 1;
 }
 
-.home-section h1 {
-  font-weight: 600;
+#our-team-section .inner {
+  max-width: 1000px;
+  line-height: 28px;
 }
 
-.home-away {
-  color: var(--primary-color);
+.inner h1 {
+  font-weight: 900;
+}
+
+/* Jumbotron section */
+#jumbotron {
+  margin: 6rem auto;
+}
+.jumbotron {
+  color: #ffffff;
+  height: 350px;
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* footer */
+footer {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e5e5e5;
+  height: 70px;
+  border-top: 0.5px solid var(--secondary-color);
+}
+.footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-logo img {
+  width: 100px;
+}
+.footer-text {
+  font-size: 0.8em;
+  letter-spacing: 0.0074em;
+}
+.footer-text a {
+  color: var(--secondary-color);
+  text-decoration: none;
 }

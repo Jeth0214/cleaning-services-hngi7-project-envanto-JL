@@ -78,6 +78,10 @@
       }
     }
   });
+
+  AOS.init({
+    duration: 2000, // values from 0 to 3000, with step 50ms
+  });
 })(jQuery); // End of use strict
 
 $(window).load(function () {});
