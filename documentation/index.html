@@ -180,10 +180,9 @@
           <hr class="notop" />
         </div>
         <pre class="prettyprint lang-html linenums">
--assets/                          (bootstrap, font awesome, jquery, popper)                
-- css/style.css                    (Template CSS)
+-assets/                          (Main css, boostrap css, Cotham folder for font-family)                
 - images/                        (All Images)
-- js/app.js                     (Template JS)</pre
+- js/                     (Bootstrap JS, JQUERY, Font Awesome js, popper js, main JS)</pre
         >
         <p>
           &nbsp;
@@ -250,7 +249,8 @@
           &nbsp;
         </div>
         <pre class="prettyprint lang-html linenums">
-css/
+assets/
+  css/
     - style.css                - (Main CSS file) 
 </pre
         >
@@ -282,11 +282,12 @@ css/
 &lt;!-- Main JS --&gt;
 &lt;script src=&quot;./js/app.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;        
 &lt;!--  Bootstrap JS Links --&gt;
-&lt;script src=&quot;./assets/boostrap/js/bootstrap.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;        
+&lt;script src=&quot;./js/bootstrap.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;        
+&lt;script src=&quot;./js/popper.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;        
+&lt;script src=&quot;./js/jquery-3.5.1.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;        
 &lt;!-- Animations Links --&gt;
-&lt;script src=&quot;./js/app.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;        
-&lt;!-- Main JS --&gt;
-&lt;script src=&quot;./js/app.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;        
+&lt;script src=&quot;https://unpkg.com/aos@2.3.1/dist/aos.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;        
+        
 </pre
           >
         </div>
@@ -299,14 +300,17 @@ css/
         </div>
         <div>
           To change the embedded font, please take a look in the head part of
-          assets/css/theme.css:
+          assets/css /style.css:
         </div>
         <div>
           &nbsp;
         </div>
         <div>
           <pre class="prettyprint lang-html linenums">
-&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap&quot; rel=&quot;stylesheet&quot;&gt;
+assets/               @font-face {                                           body {
+Cotham-master/          font-family: cotham, sans;                              font-family: cotham;
+  - CothamSans.otf      src: url("../assets/Cotham-master/CothamSans.otf");    }
+                        }
             </pre
           >
         </div>
@@ -328,14 +332,9 @@ css/
           <div>
             <pre class="prettyprint lang-css linenums">
 :root {
-  --header-font: 'Roboto', serif;
-  --text-font: 'Poppins', sans-serif;
-  --nav-font: 'Varela Round', sans-serif;
-  --primary-color: #4070ff;
-  --secondary-color: #5983ff;
-  --grey-color: #e0e0e0;
-  --dark-color: #333;
-  --white-color: #fff;
+  --primary-color: #5acd32;
+  --secondary-color: #2d1e2f;
+  --bg-color: #514663;
 }</pre
             >
           </div>
@@ -355,7 +354,7 @@ css/
         </div>
 
         <pre class="prettyprint lang-html linenums">
-&lt;i class=&quot;fa fa-home&quot;&lt;/i&gt;
+&lt;i class=&quot;fa fa-bars&quot;&lt;/i&gt;
           </pre
         >
 
@@ -379,7 +378,7 @@ css/
           image logo
         </p>
         <pre class="prettyprint lang-html linenums">
-&lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt; &lt;img src=&quot;./assets/images/...path to your logo<span style="font-family: Arial, Verdana, sans-serif;">... path to your image logo ...</span><span style="font-family: Arial, Verdana, sans-serif;">&quot; alt=&quot;logo&quot; /&gt; &lt;/a&gt;</span>
+&lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt; &lt;img src=&quot;./images/archer-logo<span style="font-family: Arial, Verdana, sans-serif;"> </span><span style="font-family: Arial, Verdana, sans-serif;">&quot; alt=&quot;logo&quot; /&gt; <span style="font-family: Arial, Verdana, sans-serif;"> </span>archer &lt;/a&gt;</span>
 </pre>
       </section>
       <section id="sliders">
