@@ -262,7 +262,8 @@ noscript p{
 	list-style:square;
 	margin-left:36px;
 }
-
+#documenter_content dl{
+}
 #documenter_content dl dt{
 	padding-top:12px;
 	font-weight:700;
