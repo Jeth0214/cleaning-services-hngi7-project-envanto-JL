@@ -8,13 +8,19 @@
   --bg-color: #514663;
 }
 
+/* Font Face */
+@font-face {
+  font-family: cotham;
+  src: url("../assets/Cotham-master/CothamSans.otf");
+}
+
 /*Global Styles */
 * {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Muli", sans-serif;
+  font-family: cotham;
   color: var(--secondary-color);
   overflow-x: hidden;
 }
