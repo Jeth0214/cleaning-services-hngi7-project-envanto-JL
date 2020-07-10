@@ -128,13 +128,28 @@ body {
   height: 1.2rem;
 }
 
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .nav-item {
+    margin: 1rem 0.9rem;
+  }
+  .btn-navbar {
+    margin-left: 0.08rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav-item a,
+  .navbar-brand {
+    color: #ffffff !important;
+  }
+}
+
 @media screen and (min-width: 992px) {
   #mainNav {
     background-color: transparent;
     transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
   }
   .nav-item {
-    margin: 1rem 0.9rem;
+    margin: 1rem 1.5rem;
   }
   .btn-navbar {
     margin-left: 1rem;
