@@ -50,7 +50,7 @@ body {
 }
 
 /* Cards */
-.card img {
+.card {
   max-height: 600px;
 }
 
