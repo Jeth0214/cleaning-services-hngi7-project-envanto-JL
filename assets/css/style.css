@@ -54,18 +54,6 @@ body {
   max-height: 600px;
 }
 
-/* titles */
-.card-title,
-.title {
-  font-weight: 600;
-}
-
-.staff {
-  font-weight: bold;
-  font-size: 1.2rem;
-  margin: 4rem 0 2rem;
-}
-
 /* Navbar */
 #mainNav {
   background-color: var(--bg-nav-color);
@@ -175,6 +163,19 @@ body {
 
 .inner h1 {
   font-weight: 900;
+}
+
+/* administrative and general staff */
+/* titles */
+.card-title,
+.title {
+  font-weight: 600;
+}
+
+.staff {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 4rem 0 2rem;
 }
 
 /* Jumbotron section */
