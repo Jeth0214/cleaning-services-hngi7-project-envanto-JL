@@ -21,7 +21,7 @@
 }
 
 body {
-  font-family: "Muli", sans-serif;
+  font-family: cotham, sans;
   color: var(--secondary-color);
   overflow-x: hidden;
 }
